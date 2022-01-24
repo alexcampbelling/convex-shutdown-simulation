@@ -1,9 +1,10 @@
 import fetch from 'node-fetch'
 
+// Add your keys via .env
 const credentials = process.env.BN_API_KEY + ':' + process.env.BN_SECRET_KEY
 const bnEndPoint = 'https://api.blocknative.com/simulate'
 
-const gasSupplied = 300000000 // Example high gas to succeed EVM execution, currently no estimation
+const gasSupplied = 300000000 // Example high gas to succeed EVM execution, **currently no estimation**
 
 async function main(): Promise<void> {
 
